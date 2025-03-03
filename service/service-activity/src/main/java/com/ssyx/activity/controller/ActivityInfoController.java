@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ssyx.activity.service.ActivityInfoService;
 import com.ssyx.common.result.Result;
 import com.ssyx.model.activity.ActivityInfo;
+import com.ssyx.model.product.SkuInfo;
 import com.ssyx.vo.activity.ActivityRuleVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -74,7 +75,9 @@ public class ActivityInfoController {
 
     @GetMapping("findSkuInfoByKeyword/{keyword}")
     public Result findSkuInfoByKeyword(@PathVariable("keyword") String keyword) {
-        return Result.success(null);
+        List<SkuInfo> list =
+                activityInfoService.findSkuInfoByKeyword(keyword);
+        return Result.success(list);
     }
 
 }

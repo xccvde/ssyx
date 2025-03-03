@@ -179,4 +179,11 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoMapper, SkuInfo> impl
         return baseMapper.selectBatchIds(skuIdList);
     }
 
+    @Override
+    public List<SkuInfo> findSkuInfoByKeyword(String keyword) {
+        List<SkuInfo> skuInfoList = baseMapper.selectList(
+                new LambdaQueryWrapper<SkuInfo>().like(SkuInfo::getSkuName, keyword));
+        return skuInfoList;
+    }
+
 }

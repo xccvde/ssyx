@@ -4,8 +4,10 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ssyx.model.activity.ActivityInfo;
+import com.ssyx.model.product.SkuInfo;
 import com.ssyx.vo.activity.ActivityRuleVo;
 
+import java.util.List;
 import java.util.Map;
 
 public interface ActivityInfoService extends IService<ActivityInfo> {
@@ -15,4 +17,6 @@ public interface ActivityInfoService extends IService<ActivityInfo> {
     Map<String, Object> findActivityRuleList(Long id);
 
     void saveActivityRule(ActivityRuleVo activityRuleVo);
+
+    List<SkuInfo> findSkuInfoByKeyword(String keyword);
 }

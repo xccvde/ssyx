@@ -47,11 +47,11 @@ public class ProductInnnerController {
 //        return categoryService.listByIds(categoryIdList);
 //    }
 //
-//    //根据关键字匹配sku列表
-//    @GetMapping("inner/findSkuInfoByKeyword/{keyword}")
-//    public List<SkuInfo> findSkuInfoByKeyword(@PathVariable("keyword") String keyword) {
-//        return skuInfoService.findSkuInfoByKeyword(keyword);
-//    }
+    //根据关键字匹配sku列表
+    @GetMapping("inner/findSkuInfoByKeyword/{keyword}")
+    public List<SkuInfo> findSkuInfoByKeyword(@PathVariable("keyword") String keyword) {
+        return skuInfoService.findSkuInfoByKeyword(keyword);
+    }
 //
 //    //获取所有分类
 //    @GetMapping("inner/findAllCategoryList")
