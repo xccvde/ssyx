@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/product/sku-attr-value")
-@CrossOrigin
+//@CrossOrigin
 public class SkuAttrValueController {
 
 }

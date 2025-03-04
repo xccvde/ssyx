@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/product/sku-poster")
-@CrossOrigin
+//@CrossOrigin
 public class SkuPosterController {
 
 }

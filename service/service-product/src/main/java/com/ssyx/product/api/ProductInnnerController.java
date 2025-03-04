@@ -42,11 +42,11 @@ public class ProductInnnerController {
     }
 
 //    //根据分类id获取分类列表
-//    @PostMapping("inner/findCategoryList")
-//    public List<Category> findCategoryList(@RequestBody List<Long> categoryIdList) {
-//        return categoryService.listByIds(categoryIdList);
-//    }
-//
+    @PostMapping("inner/findCategoryList")
+    public List<Category> findCategoryList(@RequestBody List<Long> categoryIdList) {
+        return categoryService.listByIds(categoryIdList);
+    }
+
     //根据关键字匹配sku列表
     @GetMapping("inner/findSkuInfoByKeyword/{keyword}")
     public List<SkuInfo> findSkuInfoByKeyword(@PathVariable("keyword") String keyword) {

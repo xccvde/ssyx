@@ -25,7 +25,7 @@ import java.util.List;
 @Api(tags = "开通区域接口")
 @RestController
 @RequestMapping("/admin/sys/regionWare")
-@CrossOrigin
+//@CrossOrigin
 public class RegionWareController {
 
     @Autowired

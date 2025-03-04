@@ -21,7 +21,7 @@ import java.util.Objects;
  */
 @RestController
 @RequestMapping("/admin/product/attr")
-@CrossOrigin
+//@CrossOrigin
 public class AttrController {
 
     @Resource

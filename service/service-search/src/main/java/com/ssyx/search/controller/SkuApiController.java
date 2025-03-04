@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("api/search/sku")
-@CrossOrigin
+//@CrossOrigin
 public class SkuApiController {
     @Resource
     private SkuService skuService;
